@@ -10,6 +10,8 @@ import { PageErrorComponent } from './page-error/page-error.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +20,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     HomeComponent,
     PageErrorComponent,
     NavbarComponent
+    
   ],
   imports: [
     BrowserModule,

@@ -6,16 +6,19 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { PageErrorComponent } from './page-error/page-error.component';
 
 
+
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'noticias', component: NoticiasComponent },
+  { path: 'noticias', component: NoticiasComponent, data:{titulo: 'Seccion de noticias'} },
   { path: 'servicios', component: ServiciosComponent },
+  
   { path:'**', component: PageErrorComponent}
+
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-  
+
 export class AppRoutingModule { }
